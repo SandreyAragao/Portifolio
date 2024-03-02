@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-primaria:#040D12;
+    --cor-secundaria:#fdffff;
+    --cor-terciaria:#5C8374;
+    --cor-hover:#93B1A6;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 8% 0% 0% 15%;
+}
+
+.cabecalhoMenu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalhoMenu :hover{
+    background-color: var(--cor-hover);
+}
+.cabecalhoMenuLink {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.conteiner{
+    padding: 5% 15%;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.conteudo{
+    width: 50%;
+    align-items: center;
+    display: flex 1;
+    flex-direction: column;
+    gap: 40px;
+}
+.descricaoPessoal{
+    font-size: 2.25rem;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    
+}
+
+.conteudoTexto {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.fotoPerfil{
+    width: 50%;
+    border-radius: 25px;
+}
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalhoMenu{
+        justify-content: center;
+    }
+    .conteiner{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .conteudo{
+        width: auto;
+    }
+    .fotoPerfil{
+        margin-bottom: 10%;    
+    }
+}
